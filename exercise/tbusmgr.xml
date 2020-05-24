@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gbk" standalone="yes" ?>
+<!--file name: tbusmgr.xml-->
+
+<TbusGCIM>
+    <!--点分十进制表示法的通信地址模板-->
+    <AddeTemplet>8.8.8.8</AddrTemplet>
+
+    <!--GCIM 的共享内存 key-->
+    <GCIMShmKey>1688</GCIMShmKey>
+
+    <!--以下是具体的channel信息，可以设置多个-->
+    <Channels>
+	<!--通道优先级，暂无意义-->
+	<Priority>8</Priority>
+
+	<!--指定通道的两个地址-->
+	<Address>1.1.1.1</Address>
+	<Address>1.1.1.2</Address>
+
+	<!--指定通道的两个队列的大小-->
+	<SendSize>204800</SendSize>
+	<RecvSize>204800</RecvSize>
+
+	<Desc>this is a demo</Desc>
+    </Channels>
+
+</TbusGCIM>

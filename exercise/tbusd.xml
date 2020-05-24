@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+
+<Tbusd version="9">
+    <!--本机GRM共享内存key, 必须与trelaymgr.xml 的配置一致-->
+    <RelayShmKey>2688</RelayShmKey>
+
+    <!--本机GCIM共享内存key, 必须与tbusmgr.xml 的配置一致-->
+    <GCIMShmKey>1688</GCIMShmKey>
+
+    <!--本机TBUS的监听地址，对方机器上的trelaymgr.xml中的配置必须与此一致-->
+    <Listen>tcp://x.x.x.x:port?reuse=1</Listen>
+
+    <!--允许中转的数据包的最大大小-->
+    <PkgMaxSize>131072</PjgMaxSize>
+
+    <SendBuff>131072</SendBuff>
+    <RecvBuff>131072</RecvBuff>
+    <StatGap>60 </StatGap>
+    <NeedAckPkg>1</NeedAckPkg>
+    <RefreshTbusConfGap>60 </RefreshTbusConfGap>
+    <EnableCheckPeerIP>1</EnableCheckPeerIP>
+    <DisabledChannelTimeGap>1</DisabledChannelTimeGap>
+    <IdleTickNumBeforeSleep>2</IdleTickNumBeforeSleep>
+
+</Tbusd>

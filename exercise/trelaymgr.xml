@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gbk" standalone="yes" ?>
+<!--file name: tbusmgr.xml-->
+
+<RelayMnger version="1">
+    <!--点分十进制表示法的通信地址模板-->
+    <AddeTemplet>8.8.8.8</AddrTemplet>
+
+    <!--GCIM 的共享内存 key-->
+    <RelayShmKey>2688</RelayShmKey>
+
+    <Relays type="ShmRelay">
+
+	<!--指定需要中转的目标TBUS地址-->
+	<Addr>1.1.1.1</Addr>
+
+	<!--目标TBUS地址所在物理机器的TBUS的监听地址-->
+	<MConn>tcp://TBUSIP:port</MConn>
+
+	<Desc>relay info for x.x.x.x</Desc>
+    </Relays>
+
+</RelayMnger>

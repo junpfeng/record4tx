@@ -1,0 +1,12 @@
+<?XML version="1.0" encoding="GBK" standalone="yes"?>
+<!--filename: Message_header.xml-->
+
+<metalib tagsetversion="1" name="net" version="1">
+    <struct name="Login" version="1">
+	<entry name="dataLength" type="uint16">
+	<entry name="cmd" type="uint8">
+	<entry name="userName" type="string">
+	<entry name="PassWord" type="string">
+	<entry name="data" type="string">
+    </struct>
+</metalib>
